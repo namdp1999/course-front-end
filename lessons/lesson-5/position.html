@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập về position</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .menu {
+            background: #e25300;
+            position: sticky;
+            left: 0;
+            top: 0;
+            z-index: 9999;
+            padding: 12px 20px;
+            border-radius: 8px;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu ul li {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            margin-right: 30px;
+        }
+
+        .parent {
+            background: #ccc;
+            width: 100%;
+            height: 1000px;
+            position: relative;
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+
+        .child {
+            width: 100px;
+            height: 60px;
+            position: absolute;
+            text-align: center;
+            line-height: 60px;
+            font-size: 20px;
+            color: #fff;
+            border-radius: 8px;
+        }
+
+        .child-1 {
+            background: #d44e00;
+            top: 0;
+            left: 0;
+        }
+
+        .child-2 {
+            background: #d40000;
+            top: 20px;
+            right: 20px;
+        }
+
+        .child-3 {
+            background: #369400;
+            bottom: 40px;
+            right: 40px;
+        }
+
+        .child-4 {
+            background: #2a00d4;
+            bottom: 60px;
+            left: 60px;
+        }
+
+        .call {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+        }
+
+        .call a {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+            background: #147a00;
+            border-radius: 50%;
+            z-index: 9999;
+        }
+
+        .content {
+            background-color: #0065bc;
+            color: #fff;
+            border-radius: 8px;
+            padding: 80px 50px;
+            margin-top: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content .inner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .content::first-letter {
+            font-size: 50px;
+        }
+
+        .content::first-line {
+            text-transform: uppercase;
+        }
+
+        .content::before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #0000002d;
+        }
+
+        .content::after {
+            content: "";
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            background: #0000002d;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Bài tập về position</h2>
+    <p><strong>Yêu cầu</strong>: Code các box như dưới đây. Chú ý có cả bo góc cho các element.</p>
+    <div class="menu">
+        <ul>
+            <li>
+                Trang chủ
+            </li>
+            <li>
+                Giới thiệu
+            </li>
+            <li>
+                Sản phẩm
+            </li>
+            <li>
+                Tin tức
+            </li>
+            <li>
+                Liên hệ
+            </li>
+        </ul>
+    </div>
+    <div class="parent">
+        <div class="child child-1">1</div>
+        <div class="child child-2">2</div>
+        <div class="child child-3">3</div>
+        <div class="child child-4">4</div>
+    </div>
+    <div class="content">
+        <div class="inner-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptates? Nisi debitis nulla, autem, impedit consequuntur cum adipisci eveniet, in numquam sed corrupti. Molestiae tenetur possimus perferendis repellendus excepturi saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptates? Nisi debitis nulla, autem, impedit consequuntur cum adipisci eveniet, in numquam sed corrupti. Molestiae tenetur possimus perferendis repellendus excepturi saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptates? Nisi debitis nulla, autem, impedit consequuntur cum adipisci eveniet, in numquam sed corrupti. Molestiae tenetur possimus perferendis repellendus excepturi saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptates? Nisi debitis nulla, autem, impedit consequuntur cum adipisci eveniet, in numquam sed corrupti. Molestiae tenetur possimus perferendis repellendus excepturi saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptates? Nisi debitis nulla, autem, impedit consequuntur cum adipisci eveniet, in numquam sed corrupti. Molestiae tenetur possimus perferendis repellendus excepturi saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptates? Nisi debitis nulla, autem, impedit consequuntur cum adipisci eveniet, in numquam sed corrupti. Molestiae tenetur possimus perferendis repellendus excepturi saepe.
+        </div>
+    </div>
+    <div class="call">
+        <a href="tel:0123456789">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+</body>
+
+</html>
