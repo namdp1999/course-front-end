@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <style>
+    .todo-list li .input,
+    .todo-list li .ok,
+    .todo-list li .cancel {
+      display: none;
+    }
+
+    .todo-list li.is-edit .input,
+    .todo-list li.is-edit .ok,
+    .todo-list li.is-edit .cancel {
+      display: inline-block;
+    }
+
+    .todo-list li.is-edit .content,
+    .todo-list li.is-edit .edit,
+    .todo-list li.is-edit .done {
+      display: none;
+    }
+  </style>
+
+  <form id="form-create">
+    <input type="text" name="content" placeholder="Nhập công việc">
+    <button>Thêm</button>
+  </form>
+
+  <ul id="todo-list" class="todo-list"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>

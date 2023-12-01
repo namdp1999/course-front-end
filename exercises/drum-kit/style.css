@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+.drum-kit {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.drum-kit .inner-item {
+  border: 5px solid #616161;
+  border-radius: 50%;
+  margin: 5px;
+  width: 150px;
+  height: 150px;
+  background: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all .07s ease;
+}
+
+.drum-kit .inner-item .inner-char {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.drum-kit .inner-item .inner-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: orange;
+}
+
+.drum-kit .inner-item.inner-playing {
+  transform: scale(1.1);
+  border-color: orange;
+  box-shadow: 0 0 1rem orange;
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "monHoc": "Toán",
+    "diem": 8,
+    "hoTen": "Lê Văn A"
+  },
+  {
+    "monHoc": "Lý",
+    "diem": 7,
+    "hoTen": "Lê Văn A"
+  },
+  {
+    "monHoc": "Hóa",
+    "diem": 6,
+    "hoTen": "Lê Văn A"
+  },
+  {
+    "monHoc": "Văn",
+    "diem": 6.5,
+    "hoTen": "Lê Văn A"
+  },
+  {
+    "monHoc": "Địa",
+    "diem": 9,
+    "hoTen": "Lê Văn A"
+  },
+  {
+    "monHoc": "Anh",
+    "diem": 5,
+    "hoTen": "Lê Văn A"
+  },
+  {
+    "monHoc": "Toán",
+    "diem": 7,
+    "hoTen": "Nguyễn Thị B"
+  },
+  {
+    "monHoc": "Lý",
+    "diem": 5,
+    "hoTen": "Nguyễn Thị B"
+  },
+  {
+    "monHoc": "Hóa",
+    "diem": 8,
+    "hoTen": "Nguyễn Thị B"
+  },
+  {
+    "monHoc": "Văn",
+    "diem": 5,
+    "hoTen": "Nguyễn Thị B"
+  },
+  {
+    "monHoc": "Địa",
+    "diem": 8,
+    "hoTen": "Nguyễn Thị B"
+  },
+  {
+    "monHoc": "Anh",
+    "diem": 6,
+    "hoTen": "Nguyễn Thị B"
+  }
+]
