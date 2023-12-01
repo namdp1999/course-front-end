@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+.clock {
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+  background-image: url(background.png);
+  background-size: 100% 100%;
+}
+
+.clock .inner-face {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  left: 20%;
+  top: 20%;
+}
+
+.clock .inner-face .inner-hand {
+  width: 50%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  top: calc(50% - 3px);
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  border-radius: 50% 20% 30% 50%;
+}
+
+.clock .inner-face .inner-hand.inner-minute {
+  background: blue;
+}
+
+.clock .inner-face .inner-hand.inner-second {
+  background: red;
+}
