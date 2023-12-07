@@ -9,40 +9,18 @@
 </head>
 
 <body>
-    <h2>Câu 1: Bài tập về thẻ a</h2>
-    <p><a href="https://www.google.com/">Viết dòng này bằng thẻ a. Khi click vào link sang trang google.com</a></p>
-    <p><a href="https://www.google.com/" target="_blank">Viết dòng này bằng thẻ a. Khi click vào link sang trang
-            google.com ở trong tab mới</a></p>
-    <h2>Câu 2: Bài tập về thẻ img</h2>
-    <p><strong>Yêu cầu</strong>: Tạo thư mục đặt tên là images, sau đó để hình ảnh bất kỳ vào thư mục images đó. Tiếp
-        theo, chèn hình ảnh đó vào trang web bằng cách sử dụng thẻ img. Đường dẫn ảnh là dạng relative (Đường dẫn tương đối).</p>
-    <img src="./images/khoa-hoc-front-end.jpg" alt="Khóa học lập trình Front-end">
-    <h2>Câu 3: Bài tập về thẻ video</h2>
+    <h2>Câu 1: Bài tập về thẻ video</h2>
     <p><strong>Yêu cầu</strong>: Tạo thư mục đặt tên là videos, sau đó để video bất kỳ vào thư mục videos đó. Tiếp theo,
         chèn video đó vào trang web bằng cách sử dụng thẻ video và thẻ source. Đường dẫn video là dạng relative (Đường dẫn tương
         đối). Đặt kích thước video có width bằng 720 và height bằng 405 (tương đương tỷ lệ 16/9).</p>
     <video width="720" height="405" controls>
-        <source src="./videos/video-1.mp4" type="video/mp4">
+        <source src="videos/video-1.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    <h2>Câu 4: Bài tập về thẻ table</h2>
+    <h2>Câu 2: Bài tập về thẻ table</h2>
     <p><strong>Yêu cầu</strong>: Dùng thẻ table, thead, tbody, tr, th, td đã được học để vẽ bảng sau:</p>
-    <p>
-        <strong>Lưu ý</strong>: Copy đoạn code sau vào file để có thêm đường viền cho table. Phần này chưa học nhưng thêm vào cho dễ nhìn.
-        <pre>
-        &lt;style&gt;
-            table, tr, th, td {
-                border: 1px solid #ddd;
-            }
-
-            th, td {
-                padding: 10px;
-            }
-        &lt;/style&gt;
-        </pre>
-    </p>
     <style>
-        table, tr, th, td {
+        table, th, td {
             border: 1px solid #ddd;
         }
 
@@ -154,32 +132,155 @@
             </tr>
         </tbody>
     </table>
-    <h2>Câu 5: Bài tập về thẻ ul, ol, li</h2>
-    <p><strong>Yêu cầu</strong>: Tạo danh sách sau sử dụng thẻ ul, li</p>
+    <h2>Câu 3: Bài tập về thẻ ul, ol, li</h2>
+    <p><strong>Yêu cầu 1</strong>: Tạo danh sách sau sử dụng thẻ ul, li</p>
     <ul>
         <li>Facebook</li>
         <li>Twitter</li>
         <li>Instagram</li>
         <li>Youtube</li>
     </ul>
-    <p><strong>Yêu cầu</strong>: Tạo danh sách sau sử dụng thẻ ol, li</p>
+    <p><strong>Yêu cầu 2</strong>: Tạo danh sách sau sử dụng thẻ ol, li</p>
     <ol>
         <li>Thời trang</li>
         <li>Công nghệ</li>
         <li>Đồ điện tử</li>
         <li>Đồ gia dụng</li>
     </ol>
-    <p><strong>Yêu cầu</strong>: Tạo danh sách sau sử dụng thẻ ol, li. Có kiểu là chữ La mã viết hoa</p>
+    <p><strong>Yêu cầu 3</strong>: Tạo danh sách sau sử dụng thẻ ol, li. Có kiểu là chữ La mã viết hoa</p>
     <ol type="I">
         <li>Học HTML5</li>
         <li>Học CSS3</li>
         <li>Học Bootstrap 4</li>
         <li>Học Javascript</li>
     </ol>
-    <h2>Câu 6: Bài tập về class và id</h2>
-    <p><strong>Yêu cầu</strong>: Viết đoạn văn dưới đây và làm theo nội dung bên trong nó.</p>
-    <div>Viết đoạn văn này sử dụng thẻ div. Sau đó thêm class có giá trị là "test-class" vào thẻ div này.</div>
-    <div>Viết đoạn văn này sử dụng thẻ div. Sau đó thêm id có giá trị là "test-id" vào thẻ div này.</div>
+
+    <p><strong>Yêu cầu 4</strong>: Tạo danh sách sau sử dụng thẻ ul, li</p>
+    <ul type="square">
+        <li>Cars:</li>
+        <ul type="circle">
+            <li>BMW</li>
+            <ul type="square">
+                <li>BMW X5</li>
+                <li>BMW X7</li>
+                <li>BMW Z4</li>
+                <li>BMW M2</li>
+            </ul>
+            <li>Audi</li>
+            <ul type="square">
+                <li>Audi Q8</li>
+                <li>Audi Q7 2020</li>
+                <li>Audi Q3</li>
+                <li>Audi A7</li>
+            </ul>
+            <li>Mercedes</li>
+            <li>Jaguar</li>
+            <ul type="square">
+                <li>Jaguar XF</li>
+                <li>Jaguar XE</li>
+                <li>Jaguar E Pace</li>
+                <li>Jaguar I Pace</li>
+            </ul>
+            <li>Lamborghini</li>
+        </ul>
+        <li>bikes:</li>
+        <ul type="disc">
+            <li>Apache</li>
+            <li>KTM</li>
+            <li>R15</li>
+            <li>Ducati</li>
+            <li>Harley-Davidson</li>
+        </ul>
+        <li>Aeroplanes</li>
+        <ul type="circle">
+            <li>Air India</li>
+            <li>Indigo</li>
+            <li>Vistara</li>
+            <li>GoAir</li>
+            <li>SpiceJet</li>
+        </ul>
+        <li>Trains</li>
+        <li>Ships</li>
+    </ul>
+
+    <p><strong>Yêu cầu 5</strong>: Tạo danh sách sau sử dụng thẻ ol, li</p>
+    <ol type="I">
+        <li>
+            Background Skills
+            <ol type="A">
+                <li>Unix Commands</li>
+                <li>Vim Test Editors</li>
+            </ol>
+        </li>
+        <li>
+            HTML
+            <ol type="A">
+                <li>Minimal Page</li>
+                <li>Headings</li>
+                <li>Elements</li>
+                <li>
+                    Lists
+                    <ol type="i">
+                        <li>Unordered</li>
+                        <li>Ordered</li>
+                        <li>Definition</li>
+                        <li>Nested</li>
+                    </ol>
+                </li>
+                <li>
+                    Links
+                    <ol type="i">
+                        <li>Absolute</li>
+                        <li>Relative</li>
+                    </ol>
+                </li>
+                <li>Images</li>
+            </ol>
+        </li>
+        <li>
+            CSS
+            <ol type="A">
+                <li>Anatomy</li>
+                <li>
+                    Basic Selectors
+                    <ol type="i">
+                        <li>Element</li>
+                        <li>Class</li>
+                        <li>ID</li>
+                        <li>Group</li>
+                    </ol>
+                </li>
+                <li>The DOM</li>
+                <li>Advanced Selectors</li>
+                <li>Box Model</li>
+            </ol>
+        </li>
+        <li>
+            Programming
+            <ol type="A">
+                <li>Python</li>
+                <li>JavaScript</li>
+            </ol>
+        </li>
+        <li>
+            Database
+            <ol type="A">
+                <li>Flat File</li>
+                <li>Relational</li>
+            </ol>
+        </li>
+    </ol>
+
+    <h2>Câu 4: Bài tập về thẻ iframe</h2>
+    <p><strong>Yêu cầu</strong>: Nhúng bản đồ và nhúng video youtube bất kỳ vào trang web.</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pIsOTB43pXc?si=uWF7pFZDhYw1Dey6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <br>
+    <br>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35433.65351528313!2d105.82977152751741!3d21.01250937058761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aba15ec15d17%3A0x620e85c2cfe14d4c!2zTMSDbmcgQ2jhu6cgdOG7i2NoIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1svi!2s!4v1701925919729!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
 </body>
 
 </html>
