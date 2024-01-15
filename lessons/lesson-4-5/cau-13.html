@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Câu 13 | Bài tập bài 4 + 5</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <h2>Câu 13: Counter (Các chỉ số)</h2>
+  <p><strong>Yêu cầu</strong>: Sử dụng HTML và CSS để dựng khối bên dưới (Dùng font Be
+    Vietnam Pro).</p>
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .form {
+      font-family: "Be Vietnam Pro", sans-serif;
+      border: 1px solid #eeeeee;
+      width: 550px;
+      border-radius: 10px;
+      padding: 40px;
+      margin-bottom: 30px;
+    }
+
+    .title {
+      font-size: 36px;
+      font-weight: 700;
+      color: #192335;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .form input {
+      width: 100%;
+      height: 60px;
+      border: 0;
+      background-color: #F5F5F5;
+      margin-bottom: 30px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .form input[type="checkbox"] {
+      width: auto;
+      height: auto;
+    }
+
+    .form button {
+      width: 100%;
+      height: 60px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+      background-color: #525fe1;
+      border: 0;
+      border-radius: 8px;
+    }
+
+    .form button:hover {
+      background-color: #231F40;
+    }
+  </style>
+
+
+  <div class="form">
+    <h2 class="title">Login</h2>
+
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+      <input type="email" name="email" placeholder="Email">
+      <input type="password" name="password" placeholder="Password">
+      <input type="checkbox" name="remember_me" id="rememberMe">
+      <label for="rememberMe">Remember Me</label>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div class="form">
+    <h2 class="title">Register</h2>
+
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+      <input type="text" name="full_name" placeholder="Full Name">
+      <input type="email" name="email" placeholder="Email">
+      <input type="password" name="password" placeholder="Password">
+      <input type="checkbox" name="agree" id="agree">
+      <label for="agree">I read & agree the terms & conditions.</label>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+
+
+</body>
+
+</html>
