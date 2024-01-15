@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Câu 8 | Bài tập bài 4 + 5</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <h2>Câu 8: Category (Danh sách danh mục)</h2>
+  <p><strong>Yêu cầu</strong>: Sử dụng HTML và CSS để dựng khối bên dưới (Dùng kiểu hiển thị inline-block, dùng font Be Vietnam Pro).</p>
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+    
+    .section {
+      background-color: #F9F9FF;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      text-align: center;
+      font-family: "Be Vietnam Pro", sans-serif;
+    }
+
+    .title {
+      font-size: 48px;
+      font-weight: 700;
+      color: #192335;
+    }
+
+    .box {
+      display: inline-block;
+      margin-left: 30px;
+      margin-right: 30px;
+      color: #192335;
+      text-decoration: none; /* Bỏ gạch chân cho thẻ a (Vì thẻ a mặc định có gạch chân bên dưới) */
+    }
+
+    .box:hover {
+      color: #2F57EF;
+    }
+
+    .box img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover; /* Tương tự thuộc tính background-size, nhưng áp dụng cho thẻ img */
+      border: 3px solid #192335;
+    }
+
+    .box:hover img {
+      border-color: #2F57EF;
+    }
+
+    .box h3 {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  </style>
+
+
+  <div class="section">
+    <h2 class="title">Danh sách danh mục</h2>
+
+    <a class="box" href="#">
+      <img src="images/image-1.jpg" alt="Chemistry">
+      <h3>Chemistry</h3>
+    </a>
+    <a class="box" href="#">
+      <img src="images/image-2.jpg" alt="Graphic Design">
+      <h3>Graphic Design</h3>
+    </a>
+    <a class="box" href="#">
+      <img src="images/image-3.jpg" alt="Software">
+      <h3>Software</h3>
+    </a>
+    <a class="box" href="#">
+      <img src="images/image-4.jpg" alt="Mobile App">
+      <h3>Mobile App</h3>
+    </a>
+    <a class="box" href="#">
+      <img src="images/image-5.jpg" alt="Finance">
+      <h3>Finance</h3>
+    </a>
+    <a class="box" href="#">
+      <img src="images/image-6.jpg" alt="Art & Humanities">
+      <h3>Art & Humanities</h3>
+    </a>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Câu 11 | Bài tập bài 4 + 5</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <h2>Câu 11: Category (Danh sách danh mục)</h2>
+  <p><strong>Yêu cầu</strong>: Sử dụng HTML và CSS để dựng khối bên dưới (Dùng kiểu hiển thị inline-block, dùng font Be
+    Vietnam Pro).</p>
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .section {
+      background-color: #F9F9FF;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      text-align: center;
+      font-family: "Be Vietnam Pro", sans-serif;
+    }
+
+    .title {
+      font-size: 48px;
+      font-weight: 700;
+      color: #192335;
+    }
+
+    .box {
+      display: inline-block;
+      text-align: left;
+      width: 260px;
+      border-radius: 15px;
+      padding: 15px;
+      margin-left: 15px;
+      margin-right: 15px;
+      text-decoration: none; /* Bỏ gạch chân cho thẻ a (Vì thẻ a mặc định có gạch chân bên dưới) */
+    }
+
+    .box-yellow {
+      background-color: #fffccf;
+    }
+
+    .box-pink {
+      background-color: #ffedff;
+    }
+
+    .box-orange {
+      background-color: #ffe8eb;
+    }
+
+    .box-blue {
+      background-color: #e9f6ff;
+    }
+
+    .box .image-main {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .box .icon {
+      width: 80px;
+      height: 80px;
+      background: #606060;
+      margin-top: -30px;
+      padding: 20px;
+      border-radius: 50%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .box .icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .box h3 {
+      font-size: 20px;
+      color: #192335;
+      font-weight: 800;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    .box:hover h3 {
+      color: #2F57EF;
+    }
+
+    .box ul {
+      padding: 0;
+      margin: 20px 0;
+      list-style: none;
+    }
+
+    .box ul li {
+      margin-bottom: 10px;
+      color: #6b7385;
+      font-size: 14px;
+    }
+
+    .box ul li i {
+      width: 25px;
+      color: #192335;
+    }
+
+    .box ul li:last-child {
+      margin-bottom: 0;
+    }
+
+    .box p {
+      font-size: 14px;
+      color: #192335;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .box p i {
+      margin-left: 5px;
+    }
+  </style>
+
+
+  <div class="section">
+    <h2 class="title">Danh sách danh mục</h2>
+
+    <a class="box box-yellow" href="#">
+      <img class="image-main" src="images/image-1.jpg" alt="">
+      <h3>Web Design</h3>
+      <ul>
+        <ul class="rbt-list-style-3">
+          <li><i class="fa-regular fa-heart"></i> Health and Wellness</li>
+          <li><i class="fa-regular fa-flag"></i> Literacy and Language</li>
+          <li><i class="fa-regular fa-eye"></i> Social-Emotional Learning</li>
+          <li><i class="fa-regular fa-pen-to-square"></i> Visual and Creative Arts</li>
+          <li><i class="fa-solid fa-battery-three-quarters"></i> Thinking and Learning</li>
+        </ul>
+      </ul>
+      <p>Xem Thêm <i class="fa-solid fa-arrow-right"></i></p>
+    </a>
+    <a class="box box-pink" href="#">
+      <img class="image-main" src="images/image-2.jpg" alt="">
+      <h3>Graphic Design</h3>
+      <ul>
+        <ul class="rbt-list-style-3">
+          <li><i class="fa-regular fa-heart"></i> Health and Wellness</li>
+          <li><i class="fa-regular fa-flag"></i> Literacy and Language</li>
+          <li><i class="fa-regular fa-eye"></i> Social-Emotional Learning</li>
+          <li><i class="fa-regular fa-pen-to-square"></i> Visual and Creative Arts</li>
+          <li><i class="fa-solid fa-battery-three-quarters"></i> Thinking and Learning</li>
+        </ul>
+      </ul>
+      <p>Xem Thêm <i class="fa-solid fa-arrow-right"></i></p>
+    </a>
+    <a class="box box-orange" href="#">
+      <img class="image-main" src="images/image-3.jpg" alt="">
+      <h3>Development</h3>
+      <ul>
+        <ul class="rbt-list-style-3">
+          <li><i class="fa-regular fa-heart"></i> Health and Wellness</li>
+          <li><i class="fa-regular fa-flag"></i> Literacy and Language</li>
+          <li><i class="fa-regular fa-eye"></i> Social-Emotional Learning</li>
+          <li><i class="fa-regular fa-pen-to-square"></i> Visual and Creative Arts</li>
+          <li><i class="fa-solid fa-battery-three-quarters"></i> Thinking and Learning</li>
+        </ul>
+      </ul>
+      <p>Xem Thêm <i class="fa-solid fa-arrow-right"></i></p>
+    </a>
+    <a class="box box-blue" href="#">
+      <img class="image-main" src="images/image-4.jpg" alt="">
+      <h3>IT and Software</h3>
+      <ul>
+        <ul class="rbt-list-style-3">
+          <li><i class="fa-regular fa-heart"></i> Health and Wellness</li>
+          <li><i class="fa-regular fa-flag"></i> Literacy and Language</li>
+          <li><i class="fa-regular fa-eye"></i> Social-Emotional Learning</li>
+          <li><i class="fa-regular fa-pen-to-square"></i> Visual and Creative Arts</li>
+          <li><i class="fa-solid fa-battery-three-quarters"></i> Thinking and Learning</li>
+        </ul>
+      </ul>
+      <p>Xem Thêm <i class="fa-solid fa-arrow-right"></i></p>
+    </a>
+  </div>
+
+
+
+</body>
+
+</html>
