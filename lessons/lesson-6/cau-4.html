@@ -26,23 +26,128 @@
       text-decoration: none;
     }
 
-    .section {
-      background-color: #F9F9FF;
-      padding: 80px 0;
-      font-family: "Be Vietnam Pro", sans-serif;
-    }
-
     .container {
       width: 1180px;
       margin-left: auto;
       margin-right: auto;
     }
+
+    .news-letter {
+      padding: 100px 50px;
+      font-family: "Be Vietnam Pro", sans-serif;
+      background-color: #EFF1FF;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .news-letter::before {
+      content: "";
+      background-image: url(images/dots.svg);
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .news-letter .content {
+      width: 50%;
+    }
+
+    .news-letter .content .sub-title {
+      background-color: #E8DFFC;
+      color: #B966E7;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 10px 20px;
+      border-radius: 45px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+
+    .news-letter .content .title {
+      color: #192335;
+      font-size: 38px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .news-letter .content .description {
+      color: #6b7385;
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .news-letter .form {
+      width: 45%;      
+      background: #ffffff;
+      border: 1px solid #eeeeee;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      position: relative;
+    }
+
+    .news-letter .form input {
+      flex: 1;
+      background: #ffffff;
+      padding: 0 10px;
+      outline: none;
+      border: 0;
+      font-size: 14px;
+      color: #6b7385;
+      height: 50px;
+    }
+
+    .news-letter .form button {
+      background-color: #B966E7;
+      color: #ffffff;
+      border: 0;
+      height: 50px;
+      padding: 0 20px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .news-letter .form button:hover {
+      background-color: #a04ecd;
+    }
+
+    .news-letter .form button i {
+      margin-left: 5px;
+    }
   </style>
 
 
-  <h4>Đang soạn...</h4>
-  
-  <!-- https://rainbowit.net/html/histudy/newsletter.html / newsletter-style-1 -->
+  <div class="container">
+    <div class="news-letter">
+      <div class="content">
+        <div class="sub-title">
+          Get Latest Histudy Update
+        </div>
+        <h2 class="title">
+          Subscribe Our Newsletter
+        </h2>
+        <p class="description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <form class="form" action="https://www.w3schools.com/action_page.php" target="_blank">
+        <input type="email" placeholder="Enter Your E-Email">
+        <button type="submit">
+          Subscribe <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+  </div>
 
 
 </body>
